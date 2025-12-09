@@ -4,44 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">Zachary Sugarman</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Personal Projects</a></li>
-        <li><a href="#contact">Contact Info</a></li>
-      </ul>
-    </nav>
-  </header>
+  <canvas id="leftArt"></canvas>
+  <canvas id="rightArt"></canvas>
 
-  <section id="hero">
-    <h2>Hello, I'm Zachary Sugarman</h2>
-    <p>Welcome to my personal portfolio website.</p>
-    <button id="learnMoreBtn">Learn More</button>
-  </section>
+  <div id="content" class="glow-content">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a short bio about yourself here.</p>
-  </section>
+    <header>
+      <nav>
+        <h1 class="logo">Zach Sugarman</h1>
 
-  <section id="projects">
-    <h2>Projects</h2>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="themeToggle">Change Theme</button>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div id="hero-layer"></div>
+      <h2>Hello, I'm Zach Sugarman</h2>
+      <p>Welcome to my personal website.</p>
+      <button id="learnMoreBtn" class="primary-btn">Learn More</button>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Zach!
+      I'm new to the Computer Science scene, 
+      but I've learned a lot from friends, colleagues, 
+      clubs, and schooling. I've only worked 2 part-time jobs 
+      to earn money while in school, which has taught me how to 
+      act in a workplace and the proper attitude to bring to work 
+      every day. Though I have no experience in the industry, 
+      I'm excited to get my foot in the door and need an employer 
+      to take a chance on me. I learn quickly as proven by my wide 
+      range of computer software and hardware knowledge, and I'm 
+      not afraid to ask questions if I don't have a way of finding 
+      a solution to a problem.</p>
+    </section>
+
+    <section id="projects">
+      <h2>School Projects</h2>
+
+      <div class="project-card">
+        <a href = "https://zachman2x.github.io/Lyrics-Search-App/">
+          <h3>Lyrics Search App</h3>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href = "https://zachman2x.github.io/Bug-Crush-Game/">
+          <h3>Bug Crush Game</h3>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href = "https://zachman2x.github.io/Music-Player/">
+          <h3>Personal Music Player</h3>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href = "https://zachman2x.github.io/Speak-Number-Guessing-Game/">
+          <h3>Vocal Number Guessing Game</h3>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href = "https://zachman2x.github.io/BuildAPiano/">
+          <h3>Virtual Piano</h3>
+        </a>
+      </div>
+
+      <h2>Personal Projects</h2>
+
+      <div class="project-card">
+        <a href = "https://zachman2x.github.io/Medicode-Final-/">
+          <h3>Medicode</h3>
+        </a>
+      </div>
+
     <div class="project-card">
-      <h3>Project Title</h3>
-      <p>Short description of your project.</p>
-    </div>
-  </section>
+        <a href = "https://github.com/Zachman2x/SpelvinsQuest">
+          <h3>Spelvin's Quest (In progress)</h3>
+        </a>
+      </div>
+    </section>
 
-  <footer id="contact">
-    <h2>Contact</h2>
-    <p>Email: zns.sweet@yahoo.com</p>
-  </footer>
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>Email: zns.sweet@yahoo.com</p>
+    </footer>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
